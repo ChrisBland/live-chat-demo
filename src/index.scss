@@ -1,0 +1,53 @@
+.blueBg {
+	background-color: red;
+	color: white;
+}
+
+.scarlet {
+  background-color: #bb0000;
+}
+
+.grey {
+  background-color: #eeeeee;
+}
+
+.frame{
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.eighty {
+  width: 83.3333%;
+}
+
+.twenty {
+  width: 16.66667%;
+}
+
+.chatinput{
+  margin-top: 15px;
+  height: 120px;
+  position: fixed;
+  bottom: 0px;
+  width: 80%;
+}
+
+.chatwrapper {
+  //TEMP
+  width: 83.3333%;
+  padding: 0 15px 10px 15px;
+  overflow: scroll;
+}
+
+.chatbody {
+  //TEMP
+}
+
+.footer {
+  //TEMP
+  border: 1px solid black;
+  background: green;
+
+}
