@@ -37,7 +37,6 @@ class AppMenu extends React.Component {
     }else{
       content = <Settings/>;
     }
-    console.log(this.props.menu);
     return (
       <div className={cn} >
         <div className="slds-grid">
