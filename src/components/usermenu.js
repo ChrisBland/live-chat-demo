@@ -6,11 +6,7 @@ import styles from '../index.scss';
 
 class AppMenu extends React.Component {
   render() {
-    var tiles = this.props.users.sort(function(a,b){
-      if(a.userName > b.userName) return 1;
-      if(a.userName < b.userName) return -1;
-      return 0;
-    }).map(function(u){
+    var tiles = this.props.users.map(function(u){
       return <UserTile key={u.userName} user={u}/>
     });
     return (
@@ -30,8 +26,13 @@ class AppMenu extends React.Component {
 }
 
 function mapStateToProps(state, ownProps) {
+	var users = state.users.sort(function(a,b){
+    if(a.userName > b.userName) return 1;
+    if(a.userName < b.userName) return -1;
+    return 0;
+  });
   return {
-    users: state.users
+    users: users
   };
 }
 
