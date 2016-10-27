@@ -10,7 +10,6 @@ import ChatWrapper from "./components/chat";
 
 class Main extends React.Component {
   render() {
-    var cn1 = classNames(styles.twenty, styles.scarlet);
     return (
       <div className="slds-grid slds-grid--frame">
         <Menu/>
